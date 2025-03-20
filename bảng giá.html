@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Giá Cloud FCall</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #6c757d;
+            margin-bottom: 30px;
+        }
+        .pricing-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+        .pricing-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        .pricing-header {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+        .pricing-body p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #28a745;
+        }
+        .button {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+        .features-table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 15px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .features-table th, .features-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        .features-table th {
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+        }
+        .features-table tr:first-child th:first-child {
+            border-top-left-radius: 15px;
+        }
+        .features-table tr:first-child th:last-child {
+            border-top-right-radius: 15px;
+        }
+        .features-table tr:last-child td:first-child {
+            border-bottom-left-radius: 15px;
+        }
+        .features-table tr:last-child td:last-child {
+            border-bottom-right-radius: 15px;
+        }
+        .features-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Báo giá gói dịch vụ Cloud FCall</div>
+    <div class="subtitle">(Báo giá chưa bao gồm phí tích hợp và ghi âm cuộc gọi)</div>
+    
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <div class="pricing-header">Gói F5</div>
+            <div class="pricing-body">
+                <p>Tối đa 5 Users</p>
+                <p class="price">300.000đ/ tháng</p>
+                <a class="button" href="#">Liên hệ tư vấn</a>
+            </div>
+        </div>
+        <div class="pricing-card">
+            <div class="pricing-header">Gói F10</div>
+            <div class="pricing-body">
+                <p>Tối đa 10 Users</p>
+                <p class="price">500.000đ/ tháng</p>
+                <a class="button" href="#">Liên hệ tư vấn</a>
+            </div>
+        </div>
+        <div class="pricing-card">
+            <div class="pricing-header">Gói F20</div>
+            <div class="pricing-body">
+                <p>Tối đa 20 Users</p>
+                <p class="price">900.000đ/ tháng</p>
+                <a class="button" href="#">Liên hệ tư vấn</a>
+            </div>
+        </div>
+        <div class="pricing-card">
+            <div class="pricing-header">Gói FX</div>
+            <div class="pricing-body">
+                <p>Trên 20 Users</p>
+                <p class="price">Liên hệ</p>
+                <a class="button" href="#">Liên hệ tư vấn</a>
+            </div>
+        </div>
+    </div>
+    <div class="title">Chi tiết gói dịch vụ tổng đài Cloud FCall</div>
+    <div class="subtitle">(Mô tả chi tiết tính năng gói dịch vụ tổng đài cloud FCall)</div>
+    <table class="features-table">
+        <tr>
+            <th>Tính năng tổng đài cloud FCall</th>
+            <th>FCall – F5</th>
+            <th>FCall – F10</th>
+            <th>FCall – F20</th>
+            <th>FCall – FX</th>
+        </tr>
+        <tr><td>Quản lý chi tiết lịch sử cuộc gọi vào, cuộc gọi ra, cuộc gọi nhỡ</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+        <tr><td>Kết nối tích hợp đầu số hotline 1900,1800</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+        <tr><td>Kết nối đầu số cố định, di động các nhà mạng TELCO</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+        <tr><td>Cài đặt lời chào tương tác thoại (IVR)</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+        <tr><td>Hiển thị số chủ gọi (CallerID Display)</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+        <tr><td>Định tuyến cuộc gọi vào theo giờ làm việc (Time Condition)</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+        <tr><td>Chặn cuộc gọi (Blacklist)</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+        <tr><td>Phân phối cuộc gọi vào đổ chuông theo nhóm</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+        <tr><td>Chuyển tiếp cuộc gọi tự động (Forward Call)</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+        <tr><td>Kết nối nhiều chi nhánh văn phòng (MultiSite)</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+        <tr><td>Công cụ quản lý khách hàng và chi tiết cuộc gọi</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+        <tr><td>Lời chào hướng dẫn tự động</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+        <tr><td>Hỗ trợ phần mềm trên PC, Laptop,Smartphone, Tablet</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+        <tr><td>Gọi nội bộ miễn phí không giới hạn địa lý</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+        <tr><td>Chức năng phòng hội thoại (Voice Conference)</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+        <tr><td>Phát nhạc chờ, thay đổi nhạc chờ</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+    </table>
+  <table class="features-table">
+        <tr>
+            <th>Tiện ích cộng thêm (tùy chọn)</th>
+            <th>FCall – F5</th>
+            <th>FCall – F10</th>
+            <th>FCall – F20</th>
+            <th>FCall – FX</th>
+        </tr>
+        <tr><td>Quản lý ghi âm tất cả cuộc gọi vào ra (30 ngày)</td><td>Liên hệ</td><td>Liên hệ</td><td>Liên hệ</td><td>Liên hệ</td></tr>
+        <tr><td>Quản lý billing tính cước người dùng</td><td>Liên hệ</td><td>Liên hệ</td><td>Liên hệ</td><td>Liên hệ</td></tr>
+        <tr><td>Quản lý tích hợp API ứng dụng bên ngoài</td><td>Liên hệ</td><td>Liên hệ</td><td>Liên hệ</td><td>Liên hệ</td></tr>
+        <tr><td>Voice box (Hộp thư thoại để lại lời nhắn)</td><td>Liên hệ</td><td>Liên hệ</td><td>Liên hệ</td><td>Liên hệ</td></tr>
+        <tr><td>Quản lý chi tiết lịch sử cuộc gọi vào, cuộc gọi ra, cuộc gọi nhỡ</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+    </table>
+  <table class="features-table">
+        <tr>
+            <th>Hỗ trợ dịch vụ</th>
+            <th>FCall – F5</th>
+            <th>FCall – F10</th>
+            <th>FCall – F20</th>
+            <th>FCall – FX</th>
+        </tr>
+        <tr><td>Hỗ trợ qua email</td><td>8×5</td><td>8×5</td><td>8×5</td><td>24/7</td></tr>
+        <tr><td>Hỗ trợ qua Livechat</td><td>8×5</td><td>8×5</td><td>8×5</td><td>24/7</td></tr>
+        <tr><td>Hỗ trợ qua Tổng đài</td><td>8×5</td><td>8×5</td><td>8×5</td><td>24/7</td></tr>
+        <tr><td>Quản lý chi tiết lịch sử cuộc gọi vào, cuộc gọi ra, cuộc gọi nhỡ</td><td>x</td><td>x</td><td>x</td><td>x</td></tr>
+    </table>
+
+  <div class="subtitle">((*) Ghi chú: Giá trên chưa bao gồm VAT)</div>
+</body>
+</html>
